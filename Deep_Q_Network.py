@@ -86,7 +86,7 @@ plt.plot(scores, 'b', lw=1)
 plt.plot(movingaverage(scores,5), 'g', lw=2)
 plt.plot(ExpMovingAverage(scores,5), 'y', lw=2)
 
-plt.plot([0, len(scores)], [200, 200], 'r', lw=2)
+plt.plot([0, len(scores)], [195, 195], 'r', lw=2)
 plt.ylabel('Score')
 plt.xlabel('Episode #')
 plt.show()
