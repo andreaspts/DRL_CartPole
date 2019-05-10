@@ -13,7 +13,7 @@ Due to the fact that we are using state vectors as an input and not image data w
 
 We speficy the parameters used in the Deep Q-Learning algorithm:
 
-- We set the number of episodes n_episodes to 20000. The number of episodes needed to solve the environment and reach a score of 200.00 is expected to be smaller.
+- We set the number of episodes n_episodes to 20000. The number of episodes needed to solve the environment and reach a score of 195.00 is expected to be smaller.
 - We set the maximum number of steps per episode max_t to 1000.
 - We start with an epsilion eps_start of 1.0.
 - We end with an epsilion eps_end of 0.01.
@@ -38,10 +38,10 @@ First we give a plot of the scores over the episodes:
   <img width="460" height="300" src="plot1.png">
 </p>
 
-Therein, we applied a simple and exponential moving average function at window sizes of 5  (green and yellow plot, respectively) overlaying the original data (blue). The red line indicates the threshold 200.00. More information on how to construct these moving averages in python can be found under the following links:
+Therein, we applied a simple and exponential moving average function at window sizes of 5  (green and yellow plot, respectively) overlaying the original data (blue). The red line indicates the threshold 195.00. More information on how to construct these moving averages in python can be found under the following links:
 [Moving average in python](https://www.quora.com/How-do-I-perform-moving-average-in-Python) and [Exponential Moving average in python](https://www.youtube.com/watch?v=3y9GESSZmS0). Notice that the exponential moving average gives more emphasis to recent data than the simple version of it. In general, [moving averages](https://en.wikipedia.org/wiki/Moving_average) are a method to smoothen time and data series.
 
-Then we give the average score for the last bunch of episodes and print the point where the agent reaches a score equal or higher than 200.00: 
+Then we give the average score for the last bunch of episodes and print the point where the agent reaches a score equal or higher than 195.00: 
 
 ```
 Episode 1120	Average Score: 145.94
